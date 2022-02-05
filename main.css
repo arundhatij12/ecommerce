@@ -3,18 +3,19 @@ body{
 }
 
 .head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    background-color: aquamarine;
+    background-color: rgba(36, 139, 146, 0.575);
     padding: 30px;
-    z-index: -1;
-    opacity: 0.4;
+   
 }
 
 .title{
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     margin-top: auto;
-    color: rgb(128, 155, 179);
+   
+    color: rgb(103, 152, 196);
 }
 
 .navbar{
@@ -61,4 +62,25 @@ body{
     width: 100px;
     border:2px solid rgb(52, 59, 77);
 
+}
+
+.foo{
+    margin-top: 12px;
+    padding: 50px;
+    border: 12px;
+    background-color: rgba(40, 82, 85, 0.575);
+}
+
+
+.list2{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.items{
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(236, 245, 245);
 }
