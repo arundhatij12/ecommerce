@@ -1,5 +1,6 @@
 body{
     background-color: rgb(202, 229, 231, 0.575);
+    
 }
 
 .head{
@@ -8,6 +9,54 @@ body{
     background-color: rgba(36, 139, 146, 0.575);
     padding: 30px;
    
+}
+
+.fas{
+    color: rgb(60, 78, 88);
+    position: relative;
+    border: 2px solid rgb(250, 243, 239);
+    border-radius: 50px;
+    padding: 4px;
+    background-color: antiquewhite;
+
+}
+
+.badge1{
+    color: rgb(238, 231, 231);
+    background-color: red;
+    border: 2px solid rgb(250, 243, 239);
+   width: 18px;
+   height: 18px;
+   display: flex;
+   justify-content: center;
+    border-radius: 40px;
+    position: absolute;
+    top: 40px;
+    right: 153px;
+}
+
+
+.badge2{
+    color: rgb(238, 231, 231);
+    background-color: red;
+    border: 2px solid rgb(250, 243, 239);
+   width: 18px;
+   height: 18px;
+   display: flex;
+   justify-content: center;
+    border-radius: 40px;
+    position: absolute;
+    top: 40px;
+    right: 109px;
+}
+
+.btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 48px;
+    height: 32px;
+    color: rgb(60, 78, 88) ;
+    background-color: antiquewhite;
+    border: 2px solid rgb(250, 243, 239);
 }
 
 .title{
@@ -27,7 +76,7 @@ body{
 
 .features{
     display: flex;
-    gap: 10px;
+    gap: 16px;
     list-style: none;
     
 }
