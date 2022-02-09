@@ -15,7 +15,7 @@ body{
     color: rgb(60, 78, 88);
     position: relative;
     border: 2px solid rgb(250, 243, 239);
-    border-radius: 50px;
+    border-radius: 50%;
     padding: 4px;
     background-color: antiquewhite;
 
@@ -32,7 +32,7 @@ body{
     border-radius: 40px;
     position: absolute;
     top: 40px;
-    right: 153px;
+    right: 170px;
 }
 
 
@@ -50,8 +50,10 @@ body{
     right: 109px;
 }
 
+
 .btn{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
     width: 48px;
     height: 32px;
     color: rgb(60, 78, 88) ;
@@ -96,7 +98,6 @@ body{
     padding: 30px;
     height: 400px;
     gap: 20px;
-    border:1px solid rgb(19, 64, 116);
     margin-top: 20px;
 }
 
@@ -105,19 +106,114 @@ body{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: center;
-    padding:50px;
-    height: 100px;
-    width: 100px;
-    border:2px solid rgb(52, 59, 77);
+
+    height: 214px;
+    width: 250px;
+    border:1px solid rgb(151, 154, 163);
 
 }
+
+.product:hover{
+    transform: scale(1.2);
+    background-color: rgba(109, 153, 156, 0.575);;
+}
+
+.content{
+    display: flex;
+    
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+
+.desc1{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desc2{
+    display: flex;
+    
+    color: rgb(45, 88, 88);
+  
+}
+
+.desc3{
+    
+    display: inline;
+ 
+    color: rgb(76, 187, 187);
+   
+}
+
+
+.end{
+    gap: 10px;
+    padding: 20px 36px;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn1{
+    color: #3c4e58;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: -18px;
+    padding: 2px 5px;
+    width: 5rem;
+    background-color: antiquewhite;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+}
+
+.image{ 
+    width: 190px;
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}  
+
+
+
+#img1{
+    background-image: url("https://kpopbae.com/wp-content/uploads/2019/08/3986-bcfr8s.jpg");
+    
+    
+}
+
+#img2{
+    background-image: url("https://kpopbae.com/wp-content/uploads/2019/08/3986-bcfr8s.jpg");
+    
+}
+
+#img3{
+    background-image: url("https://images.bonanzastatic.com/afu/images/594e/ceff/1596_7358516981/bts-army-kpop-hooded-women-autumn-cap-hoodies-sweatshirt-bangtan-sweatshirt-women-hoodies-casual.jpg");
+}
+
+#img4{
+    background-image: url("https://cdn.shopify.com/s/files/1/1215/1636/products/4468044652_1141508764_1024x1024.jpg?v=1526616087");
+}
+
+
+
 
 .foo{
     margin-top: 12px;
     padding: 50px;
     border: 12px;
     background-color: rgba(40, 82, 85, 0.575);
+}
+
+.foo-links{
+    text-decoration: none;
 }
 
 
