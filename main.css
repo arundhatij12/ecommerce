@@ -1,17 +1,32 @@
 body{
     background-color: rgb(202, 229, 231, 0.575);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
 .head{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    background-color: rgba(36, 139, 146, 0.575);
-    padding: 30px;
-   
+    background-color: rgba(36, 139, 146, 0.3);
+    padding: 30px; 
+    z-index: 1;
 }
 
-.fas{
+.link{
+    text-decoration: none;
+    color: rgb(69, 109, 145);
+}
+
+#fas1{
+    color: rgb(60, 78, 88);
+    position: relative;
+    border: 2px solid rgb(250, 243, 239);
+    border-radius: 50%;
+    padding: 4px;
+    background-color: antiquewhite;
+}
+
+#far1{
     color: rgb(60, 78, 88);
     position: relative;
     border: 2px solid rgb(250, 243, 239);
@@ -32,7 +47,7 @@ body{
     border-radius: 40px;
     position: absolute;
     top: 40px;
-    right: 170px;
+    right: 143px;
 }
 
 
@@ -47,14 +62,14 @@ body{
     border-radius: 40px;
     position: absolute;
     top: 40px;
-    right: 109px;
+    right: 89px;
 }
 
 
 .btn{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   display: flex;
    font-weight: 600;
-    width: 48px;
+    width: 80px;
     height: 32px;
     color: rgb(60, 78, 88) ;
     background-color: antiquewhite;
@@ -66,7 +81,7 @@ body{
     display: flex;
     margin-top: auto;
    
-    color: rgb(103, 152, 196);
+    color: rgb(34, 60, 83);
 }
 
 .navbar{
@@ -78,7 +93,7 @@ body{
 
 .features{
     display: flex;
-    gap: 16px;
+    gap: 8px;
     list-style: none;
     
 }
@@ -87,6 +102,43 @@ body{
     display: inline;  
     
 }
+
+.filter1{
+background-image: url("https://cdn.wallpapersafari.com/61/76/6ivwQK.png");
+text-align: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    height: 220px;
+    color: white;
+ 
+}
+
+.filter{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    align-items: center;
+    background-color: rgba(36, 139, 146, 0.2);
+    height: 220px; 
+    margin-top: -60px;
+    opacity: 0;
+}
+
+.filter:hover{
+    opacity: 1;
+}
+
+.fil{
+    display: flex;
+    
+
+}
+
+.ref1{
+    list-style: none;
+}
+
 
 
 .box{
@@ -174,7 +226,7 @@ body{
     border: 1px solid white;
 }
 
-.image{ 
+.image1{ 
     width: 190px;
     height: 160px;
     background-size: contain;

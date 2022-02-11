@@ -10,8 +10,6 @@ body{
     background-color: rgba(36, 139, 146, 0.3);
     padding: 30px; 
     z-index: 1;
-    
-   
 }
 
 #fas1{
@@ -77,8 +75,7 @@ body{
     font-size: 3rem;
     display: flex;
     margin-top: auto;
-   
-    color: rgb(34, 60, 83);
+    color: rgb(69, 109, 145);;
 }
 
 .navbar{
@@ -103,8 +100,6 @@ body{
 .image{
     background-image: url("https://wallpapercave.com/wp/wp3872053.png");
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     height: 416px;
