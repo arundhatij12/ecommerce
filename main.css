@@ -190,12 +190,12 @@ body{
 }
 
 #img2{
-    background-image: url("https://kpopbae.com/wp-content/uploads/2019/08/3986-bcfr8s.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/1827/6383/products/product-image-440959631_2048x.jpg?v=1511097922");
     
 }
 
 #img3{
-    background-image: url("https://images.bonanzastatic.com/afu/images/594e/ceff/1596_7358516981/bts-army-kpop-hooded-women-autumn-cap-hoodies-sweatshirt-bangtan-sweatshirt-women-hoodies-casual.jpg");
+    background-image: url("https://sfo2.digitaloceanspaces.com/hieptran50293/2020/12/4b-1.jpg");
 }
 
 #img4{
@@ -228,4 +228,8 @@ body{
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(236, 245, 245);
+}
+
+.links{
+    text-decoration: none;
 }
