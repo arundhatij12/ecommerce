@@ -1,164 +1,261 @@
-body{
-    background-color: rgb(202, 229, 231, 0.575);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+body {
+  background-color: rgb(202, 229, 231, 0.575);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.head{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    background-color: rgba(36, 139, 146, 0.3);
-    padding: 30px; 
-    z-index: 1;
+:root {
+  --font-color: rgb(69, 109, 145);
+  --background: rgba(36, 139, 146, 0.3);
+  --badge: rgb(238, 231, 231);
+  --badge-background: red;
+  --badge-border: 2px solid rgb(250, 243, 239);
+  --cat-border: 3px solid rgb(69, 109, 145);
+  --cat-font: rgb(120, 188, 233);
+  --hover: rgb(131, 183, 226);
+  --sub-background1: rgb(94, 197, 235, 0.5);
+  --sub-background2: rgb(121, 197, 233, 0.3);
+  --sub-background3: rgb(94 197 235 / 0.5);
 }
 
-#fas1{
-    color: rgb(60, 78, 88);
-    position: relative;
-    border: 2px solid rgb(250, 243, 239);
-    border-radius: 50%;
-    padding: 4px;
-    background-color: antiquewhite;
+a {
+  text-decoration: none;
 }
 
-#far1{
-    color: rgb(60, 78, 88);
-    position: relative;
-    border: 2px solid rgb(250, 243, 239);
-    border-radius: 50%;
-    padding: 4px;
-    background-color: antiquewhite;
-
+.cat1:hover {
+  background-color: rgb(175, 197, 216);
 }
 
-.badge1{
-    color: rgb(238, 231, 231);
-    background-color: red;
-    border: 2px solid rgb(250, 243, 239);
-   width: 18px;
-   height: 18px;
-   display: flex;
-   justify-content: center;
-    border-radius: 40px;
-    position: absolute;
-    top: 40px;
-    right: 143px;
+.head {
+  display: flex;
+  background-color: var(--background);
+  padding: 30px;
+  z-index: 1;
 }
 
-
-.badge2{
-    color: rgb(238, 231, 231);
-    background-color: red;
-    border: 2px solid rgb(250, 243, 239);
-   width: 18px;
-   height: 18px;
-   display: flex;
-   justify-content: center;
-    border-radius: 40px;
-    position: absolute;
-    top: 40px;
-    right: 89px;
+#fas1 {
+  color: var(--font-color);
+  position: relative;
+  border: 2px solid rgb(250, 243, 239);
+  border-radius: 50%;
+  padding: 4px;
+  background-color: antiquewhite;
 }
 
-
-.btn{
-   display: flex;
-   font-weight: 600;
-    width: 80px;
-    height: 32px;
-    color: rgb(60, 78, 88) ;
-    background-color: antiquewhite;
-    border: 2px solid rgb(250, 243, 239);
+#far1 {
+  color: var(--font-color);
+  position: relative;
+  border: 2px solid rgb(250, 243, 239);
+  border-radius: 50%;
+  padding: 4px;
+  background-color: antiquewhite;
 }
 
-.title{
+.badge1 {
+  color: var(--badge);
+  background-color: var(--badge-background);
+  border: var(--badge-border);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  right: 143px;
+}
+
+.badge2 {
+  color: var(--badge);
+  background-color: var(--badge-background);
+  border: var(--badge-border);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  right: 89px;
+}
+
+.btn {
+  display: flex;
+  font-weight: 600;
+  width: 80px;
+  height: 32px;
+  color: rgb(60, 78, 88);
+  background-color: antiquewhite;
+  border: var(--badge-border);
+}
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  color: rgb(69, 109, 145);
+}
+
+.navbar {
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.item {
+  display: inline;
+}
+
+.image {
+  background-image: url("https://wallpapercave.com/wp/wp3872053.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 416px;
+}
+
+@media (min-width: 1150px) {
+  .title {
     font-size: 3rem;
-    display: flex;
-    margin-top: auto;
-    color: rgb(69, 109, 145);;
+  }
 }
 
-.navbar{
-    display: flex;
-    margin-left: auto;
-    flex-wrap: wrap;
-   
+.subs {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.features{
-    display: flex;
-    gap: 8px;
-    list-style: none;
-    
+#sub1 {
+  background-color: var(--sub-background1);
 }
 
-.item{
-    display: inline;  
-    
+#sub2 {
+  background-color: var(--sub-background2);
 }
 
-.image{
-    background-image: url("https://wallpapercave.com/wp/wp3872053.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 416px;
+#sub3 {
+  background-color: var(--sub-background3);
 }
 
-.subs{
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.sub-title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(69, 109, 145);
+  border-bottom: 2px solid rgb(69, 109, 145);
+  padding: 2rem;
+  margin: 2rem;
 }
 
-#sub1{
-    background-color: rgb(94, 197, 235, 0.5);
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-#sub2{
-    background-color: rgb(121, 197, 233, 0.3);
+.cat-type {
+  display: flex;
+  flex-wrap: wrap;
+  height: 22rem;
+  width: 22rem;
+  color: var(--cat-font);
+  text-shadow: 1px 2px rgb(255, 255, 255);
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 
-#sub3{
-    background-color: rgb(94 197 235 / 0.5);
+.cat1 {
+  display: flex;
 }
 
-
-.foo{
-    margin-top: 12px;
-    padding: 50px;
-    border: 12px;
-    background-color: rgba(40, 82, 85, 0.575);
+.cat-desc {
+  height: 22rem;
+  width: 16rem;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
-.foo-links{
-    text-decoration: none;
+#cat1 {
+  background-color: var(--sub-background1);
 }
 
-
-
-.list2{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+#cat2 {
+  background-color: var(--sub-background2);
 }
 
-.items{
-    padding: 10px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(236, 245, 245);
+#cat3 {
+  background-color: var(--sub-background3);
 }
 
-.links{
-    text-decoration: none;
+.cat-type:hover {
+  background-color: var(--hover);
 }
 
-.links:hover{
-   color: rgb(0, 140, 255);
-   
+#cat-type1 {
+  background-image: url("https://flippa.com/blog/wp-content/uploads/2020/01/Blog-Header-Image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+#cat-type3 {
+  background-image: url("https://i.ebayimg.com/images/i/172283119038-0-1/s-l1000.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cat-type2 {
+  background-image: url("https://i.pinimg.com/736x/23/be/0b/23be0b04bfe263fa8ce076b45f03b901.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foo {
+  margin-top: 12px;
+  padding: 50px;
+  border: 12px;
+  background-color: rgba(40, 82, 85, 0.575);
+}
+
+.foo-links {
+  text-decoration: none;
+}
+
+.list2 {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.items {
+  padding: 10px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(236, 245, 245);
+}
+
+.links {
+  text-decoration: none;
+}
+
+.links:hover {
+  color: rgb(0, 140, 255);
+}
