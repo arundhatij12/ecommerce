@@ -11,7 +11,7 @@ body {
   --badge-border: 2px solid rgb(250, 243, 239);
   --badge-background: red;
   --button-color: rgba(137, 212, 218, 0.5);
-  --link-color: rgb(69, 109, 145
+  --link-color: rgb(69, 109, 145);
 }
 
 button {
@@ -50,7 +50,7 @@ button:hover {
   border: var(--badge-border);
   border-radius: 50%;
   padding: 4px;
-  background-color:var(--icon-background);
+  background-color: var(--icon-background);
 }
 
 .badge1 {
@@ -70,7 +70,7 @@ button:hover {
 .badge2 {
   color: rgb(238, 231, 231);
   background-color: red;
-  border:var(--badge-border);
+  border: var(--badge-border);
   width: 18px;
   height: 18px;
   display: flex;
