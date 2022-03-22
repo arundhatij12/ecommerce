@@ -10,10 +10,12 @@ body {
   --icon-background: 2px antiquewhite;
   --badge-border: 2px solid rgb(250, 243, 239);
   --badge-background: red;
+  --button-color: rgba(137, 212, 218, 0.5);
+  --link-color: rgb(69, 109, 145
 }
 
 button {
-  background-color: rgba(137, 212, 218, 0.5);
+  background-color: var(--button-color);
   cursor: pointer;
 }
 
@@ -23,38 +25,38 @@ button:hover {
 
 .head {
   display: flex;
-  background-color: rgba(36, 139, 146, 0.3);
+  background-color: var(--head-color);
   padding: 30px;
   z-index: 1;
 }
 
 .link {
   text-decoration: none;
-  color: rgb(69, 109, 145);
+  color: var(--link-color);
 }
 
 #fas1 {
-  color: rgb(60, 78, 88);
+  color: var(--font-color);
   position: relative;
-  border: 2px solid rgb(250, 243, 239);
+  border: var(--badge-border);
   border-radius: 50%;
   padding: 4px;
-  background-color: antiquewhite;
+  background-color: var(--icon-background);
 }
 
 #far1 {
-  color: rgb(60, 78, 88);
+  color: var(--font-color);
   position: relative;
-  border: 2px solid rgb(250, 243, 239);
+  border: var(--badge-border);
   border-radius: 50%;
   padding: 4px;
-  background-color: antiquewhite;
+  background-color:var(--icon-background);
 }
 
 .badge1 {
   color: rgb(238, 231, 231);
   background-color: red;
-  border: 2px solid rgb(250, 243, 239);
+  border: var(--badge-border);
   width: 18px;
   height: 18px;
   display: flex;
@@ -68,7 +70,7 @@ button:hover {
 .badge2 {
   color: rgb(238, 231, 231);
   background-color: red;
-  border: 2px solid rgb(250, 243, 239);
+  border:var(--badge-border);
   width: 18px;
   height: 18px;
   display: flex;
@@ -84,9 +86,9 @@ button:hover {
   font-weight: 600;
   width: 80px;
   height: 32px;
-  color: rgb(60, 78, 88);
-  background-color: antiquewhite;
-  border: 2px solid rgb(250, 243, 239);
+  color: var(--font-color);
+  background-color: var(--icon-background);
+  border: var(--badge-border);
 }
 
 .title {
