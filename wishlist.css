@@ -15,6 +15,16 @@ body {
   --sub-background1: rgb(94, 197, 235, 0.5);
   --sub-background2: rgb(121, 197, 233, 0.3);
   --sub-background3: rgb(94 197 235 / 0.5);
+  --button: rgba(137, 212, 218, 0.5);
+}
+
+button {
+  background-color: var(--button);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(62, 110, 151, 0.5);
 }
 
 a {
