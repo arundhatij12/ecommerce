@@ -4,16 +4,23 @@ body {
 }
 
 :root {
-  --head-color: rgba(36, 139, 146, 0.3);
-  --font-color: rgb(60, 78, 88);
-  --icon-border: 2px solid rgb(250, 243, 239);
-  --icon-background: 2px antiquewhite;
-  --badge-border: 2px solid rgb(250, 243, 239);
+  --font-color: rgb(69, 109, 145);
+  --background: rgba(36, 139, 146, 0.3);
+  --badge: rgb(238, 231, 231);
   --badge-background: red;
+  --badge-border: 2px solid rgb(250, 243, 239);
+  --icon-background: rgb(250, 243, 239);
+  --cat-border: 3px solid rgb(69, 109, 145);
+  --cat-font: rgb(120, 188, 233);
+  --hover: rgb(131, 183, 226);
+  --sub-background1: rgb(94, 197, 235, 0.5);
+  --sub-background2: rgb(121, 197, 233, 0.3);
+  --sub-background3: rgb(94 197 235 / 0.5);
+  --button: rgba(137, 212, 218, 0.5);
 }
 
 button {
-  background-color: rgba(137, 212, 218, 0.5);
+  background-color: var(--button);
   cursor: pointer;
 }
 
@@ -23,38 +30,38 @@ button:hover {
 
 .head {
   display: flex;
-  background-color: rgba(36, 139, 146, 0.3);
+  background-color: var(--background);
   padding: 30px;
   z-index: 1;
 }
 
 .link {
   text-decoration: none;
-  color: rgb(69, 109, 145);
+  color: var(--font-color);
 }
 
 #fas1 {
-  color: rgb(60, 78, 88);
+  color: var(--font-color);
   position: relative;
-  border: 2px solid rgb(250, 243, 239);
+  border: var(--icon-background);
   border-radius: 50%;
   padding: 4px;
-  background-color: antiquewhite;
+  background-color: var(--icon-background);
 }
 
 #far1 {
-  color: rgb(60, 78, 88);
+  color: var(--font-color);
   position: relative;
-  border: 2px solid rgb(250, 243, 239);
+  border: var(--badge-border);
   border-radius: 50%;
   padding: 4px;
-  background-color: antiquewhite;
+  background-color: var(--icon-background);
 }
 
 .badge1 {
   color: rgb(238, 231, 231);
-  background-color: red;
-  border: 2px solid rgb(250, 243, 239);
+  background-color: var(--badge-background);
+  border: var(--badge-border);
   width: 18px;
   height: 18px;
   display: flex;
@@ -67,8 +74,8 @@ button:hover {
 
 .badge2 {
   color: rgb(238, 231, 231);
-  background-color: red;
-  border: 2px solid rgb(250, 243, 239);
+  background-color: var(--badge-background);
+  border: var(--badge-border);
   width: 18px;
   height: 18px;
   display: flex;
@@ -86,14 +93,13 @@ button:hover {
   height: 32px;
   color: rgb(60, 78, 88);
   background-color: antiquewhite;
-  border: 2px solid rgb(250, 243, 239);
+  border: var(--badge-border);
 }
 
 .title {
   font-size: 3rem;
   display: flex;
   margin-top: auto;
-
   color: rgb(34, 60, 83);
 }
 
