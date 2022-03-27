@@ -1,295 +1,327 @@
-body{
-    background-color: rgb(202, 229, 231, 0.575);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+body {
+  background-color: rgb(202, 229, 231, 0.575);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.head{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+:root {
+  --font-color: rgb(69, 109, 145);
+  --background: rgba(36, 139, 146, 0.3);
+  --badge: rgb(238, 231, 231);
+  --badge-background: red;
+  --badge-border: 2px solid rgb(250, 243, 239);
+  --cat-border: 3px solid rgb(69, 109, 145);
+  --cat-font: rgb(120, 188, 233);
+  --hover: rgb(131, 183, 226);
+  --sub-background1: rgb(94, 197, 235, 0.5);
+  --sub-background2: rgb(121, 197, 233, 0.3);
+  --sub-background3: rgb(94 197 235 / 0.5);
+  --button: rgba(137, 212, 218, 0.5);
+  --button-border: 1px solid white;
+}
+
+button:hover {
+  background-color: rgba(62, 110, 151, 0.5);
+  color: white;
+}
+
+.head {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  background-color: var(--background);
+  padding: 30px;
+  z-index: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+#fas1 {
+  color: var(--font-color);
+  position: relative;
+  border: var(--badge-border);
+  border-radius: 50%;
+  padding: 4px;
+  background-color: antiquewhite;
+}
+
+#far1 {
+  color: rgb(60, 78, 88);
+  position: relative;
+  border: var(--badge-border);
+  border-radius: 50%;
+  padding: 4px;
+  background-color: antiquewhite;
+}
+
+.badge1 {
+  color: var(--badge);
+  background-color: var(--badge-background);
+  border: var(--badge-border);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  right: 143px;
+}
+
+.badge2 {
+  color: var(--badge);
+  background-color: var(--badge-background);
+  border: var(--badge-border);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  right: 89px;
+}
+
+.btn {
+  display: flex;
+  font-weight: 600;
+  width: 80px;
+  height: 32px;
+  color: var(--font-color);
+  background-color: antiquewhite;
+  border: var(--badge-border);
+}
+
+.title {
+  font-size: 3rem;
+  display: flex;
+  margin-top: auto;
+  color: rgb(34, 60, 83);
+}
+
+.navbar {
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.item {
+  display: inline;
+}
+
+.filter1 {
+  background-image: url("https://cdn.wallpapersafari.com/61/76/6ivwQK.png");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  color: white;
+}
+
+.filter2 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(36, 139, 146, 0.2);
+  height: 220px;
+  margin-top: -60px;
+  opacity: 0;
+}
+
+.filter2:hover {
+  opacity: 1;
+}
+
+.filter2 button {
+  background-color: rgba(62, 110, 151, 0.5);
+  color: white;
+  border: var(--button-border);
+}
+
+.filter2 button:hover {
+  background-color: rgb(102, 197, 204);
+  cursor: pointer;
+}
+
+.filter {
+  text-align: center;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
     display: flex;
-    background-color: rgba(36, 139, 146, 0.3);
-    padding: 30px; 
-    z-index: 1;
-}
-
-.link{
-    text-decoration: none;
-    color: rgb(69, 109, 145);
-}
-
-#fas1{
-    color: rgb(60, 78, 88);
     position: relative;
-    border: 2px solid rgb(250, 243, 239);
-    border-radius: 50%;
-    padding: 4px;
-    background-color: antiquewhite;
-}
-
-#far1{
-    color: rgb(60, 78, 88);
-    position: relative;
-    border: 2px solid rgb(250, 243, 239);
-    border-radius: 50%;
-    padding: 4px;
-    background-color: antiquewhite;
-
-}
-
-.badge1{
-    color: rgb(238, 231, 231);
-    background-color: red;
-    border: 2px solid rgb(250, 243, 239);
-   width: 18px;
-   height: 18px;
-   display: flex;
-   justify-content: center;
-    border-radius: 40px;
-    position: absolute;
-    top: 40px;
-    right: 143px;
-}
-
-
-.badge2{
-    color: rgb(238, 231, 231);
-    background-color: red;
-    border: 2px solid rgb(250, 243, 239);
-   width: 18px;
-   height: 18px;
-   display: flex;
-   justify-content: center;
-    border-radius: 40px;
-    position: absolute;
-    top: 40px;
-    right: 89px;
-}
-
-
-.btn{
-   display: flex;
-   font-weight: 600;
-    width: 80px;
-    height: 32px;
-    color: rgb(60, 78, 88) ;
-    background-color: antiquewhite;
-    border: 2px solid rgb(250, 243, 239);
-}
-
-.title{
-    font-size: 3rem;
-    display: flex;
-    margin-top: auto;
-   
-    color: rgb(34, 60, 83);
-}
-
-.navbar{
-    display: flex;
-    margin-left: auto;
-    flex-wrap: wrap;
-   
-}
-
-.features{
-    display: flex;
-    gap: 8px;
-    list-style: none;
-    
-}
-
-.item{
-    display: inline;  
-    
-}
-
-.filter1{
-background-image: url("https://cdn.wallpapersafari.com/61/76/6ivwQK.png");
-text-align: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-    height: 220px;
-    color: white;
- 
-}
-
-.filter2{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 16px;
-    align-items: center;
-    background-color: rgba(36, 139, 146, 0.2);
-    height: 220px; 
-    margin-top: -60px;
-    opacity: 0;
-}
-
-
-
-.filter2:hover{
-    opacity: 1;
-}
-
-.fil{
-    display: flex;
-    
-
-}
-
-.ref1{
-    list-style: none;
-}
-
-.filter3{
-    margin-top: -50px;
-}
-
-
-
-
-
-.box{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    align-content:center;
-    flex-wrap: wrap;
-    padding: 30px;
-    height: 400px;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-
-.product{
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    height: 214px;
-    width: 250px;
-    border:1px solid rgb(151, 154, 163);
-
-}
-
-.product:hover{
-    transform: scale(1.2);
-    background-color: rgba(109, 153, 156, 0.575);;
-}
-
-.content{
-    display: flex;
-    
-    flex-direction: row;
-    padding: 10px;
-}
-
-
-
-.desc1{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  
+    top: 30px;
+    right: 20px;
+    font-size: small;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
-.desc2{
-    display: flex;
-    margin-top: 4px;
-    color: rgb(45, 88, 88);
-  
+.fil {
+  display: flex;
+  flex-direction: column;
 }
 
-.desc3{
-    
-    display: inline;
- 
-    color: rgb(76, 187, 187);
-   
+.ref1 {
+  list-style: none;
 }
 
+.ref {
+  display: flex;
+}
 
-.end{
-    gap: 10px;
-    padding: 20px 36px;
-    display: flex;
+.range-slider {
+  display: flex;
+}
+
+.filter3 {
+  margin-top: -50px;
+}
+
+.box {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  height: max-content;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  height: 214px;
+  width: 250px;
+  border: 1px solid rgb(151, 154, 163);
+}
+
+.product:hover {
+  transform: scale(1.2);
+  background-color: rgba(109, 153, 156, 0.575);
+}
+
+.content {
+  display: flex;
+  width: max-content;
+  align-content: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+}
+
+.desc1 {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desc2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 4px;
+  color: rgb(45, 88, 88);
+}
+
+.desc3 {
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  color: rgb(76, 187, 187);
+}
+
+.end {
+  gap: 10px;
+  padding: 20px 36px;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.btn1{
-    color: #3c4e58;
-    
-    display: flex;
-    justify-content: center;
-    margin-top: -18px;
-    padding: 2px 5px;
-    width: 5rem;
-    background-color: antiquewhite;
-    border-radius: 0.5rem;
-    border: 1px solid white;
+.btn1 {
+  color: #3c4e58;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: -18px;
+  padding: 2px 5px;
+  width: 5rem;
+  background-color: antiquewhite;
+  border-radius: 0.5rem;
+  border: 1px solid white;
 }
 
-.image1{ 
-    width: 190px;
-    height: 160px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}  
-
-
-
-#img1{
-    background-image: url("https://kpopbae.com/wp-content/uploads/2019/08/3986-bcfr8s.jpg");
-    
-    
+.image1 {
+  width: 190px;
+  height: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#img2{
-    background-image: url("https://cdn.shopify.com/s/files/1/1827/6383/products/product-image-440959631_2048x.jpg?v=1511097922");
-    
+#img1 {
+  background-image: url("https://kpopbae.com/wp-content/uploads/2019/08/3986-bcfr8s.jpg");
 }
 
-#img3{
-    background-image: url("https://sfo2.digitaloceanspaces.com/hieptran50293/2020/12/4b-1.jpg");
+#img2 {
+  background-image: url("https://cdn.shopify.com/s/files/1/1827/6383/products/product-image-440959631_2048x.jpg?v=1511097922");
 }
 
-#img4{
-    background-image: url("https://cdn.shopify.com/s/files/1/1215/1636/products/4468044652_1141508764_1024x1024.jpg?v=1526616087");
+#img3 {
+  background-image: url("https://sfo2.digitaloceanspaces.com/hieptran50293/2020/12/4b-1.jpg");
 }
 
-
-
-
-.foo{
-    margin-top: 12px;
-    padding: 50px;
-    border: 12px;
-    background-color: rgba(40, 82, 85, 0.575);
+#img4 {
+  background-image: url("https://cdn.shopify.com/s/files/1/1215/1636/products/4468044652_1141508764_1024x1024.jpg?v=1526616087");
 }
 
-.foo-links{
-    text-decoration: none;
+.foo {
+  margin-top: 12px;
+  padding: 50px;
+  border: 12px;
+  background-color: rgba(40, 82, 85, 0.575);
 }
 
-
-.list2{
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.foo-links {
+  text-decoration: none;
 }
 
-.items{
-    padding: 10px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(236, 245, 245);
+.list2 {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-.links{
-    text-decoration: none;
+.items {
+  padding: 10px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(236, 245, 245);
+}
+
+.links {
+  text-decoration: none;
 }
