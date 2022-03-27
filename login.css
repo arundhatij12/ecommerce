@@ -15,16 +15,21 @@ body {
   --sub-background1: rgb(94, 197, 235, 0.5);
   --sub-background2: rgb(121, 197, 233, 0.3);
   --sub-background3: rgb(94 197 235 / 0.5);
+  --button: rgba(137, 212, 218, 0.5);
 }
 
 button {
-  background-color: rgba(137, 212, 218, 0.5);
+  background-color: var(--button);
   cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(62, 110, 151, 0.5);
 }
 
 a {
   text-decoration: none;
-  color:var(--cat-font) ;
+  color: var(--cat-font);
 }
 
 .cat1:hover {
@@ -116,42 +121,40 @@ a {
   display: inline;
 }
 
-.product-form{
-   display: flex;
-    flex-wrap: wrap;
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
   height: max-content;
   justify-content: center;
   align-items: center;
-   border: 1px ;
-   padding: 5px;
-   
+  border: 1px;
+  padding: 5px;
 }
 
 .product {
   display: flex;
   justify-content: center;
   align-items: center;
-   flex-direction: column;
+  flex-direction: column;
   flex-wrap: wrap;
   height: max-content;
- 
+
   border: 1px solid rgb(151, 154, 163);
   padding: 10px;
 }
 
 .box {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 30px;
   height: max-content;
   gap: 10px;
   margin-top: 20px;
 }
-
 
 .foo {
   margin-top: 12px;
