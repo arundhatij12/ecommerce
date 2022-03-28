@@ -97,7 +97,11 @@ button:hover {
   font-size: 3rem;
   display: flex;
   margin-top: auto;
-  color: rgb(34, 60, 83);
+  color: rgb(69, 109, 145);
+}
+
+.title:hover {
+  color: var(--badge);
 }
 
 .navbar {
@@ -299,6 +303,9 @@ button:hover {
 }
 
 .foo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12px;
   padding: 50px;
   border: 12px;

@@ -29,7 +29,6 @@ button:hover {
 
 a {
   text-decoration: none;
-  color: var(--cat-font);
 }
 
 .cat1:hover {
@@ -103,7 +102,11 @@ a {
   font-size: 3rem;
   display: flex;
   margin-top: auto;
-  color: rgb(34, 60, 83);
+  color: rgb(69, 109, 145);
+}
+
+.title:hover {
+  color: var(--badge);
 }
 
 .navbar {
@@ -155,6 +158,10 @@ a {
   height: max-content;
   gap: 10px;
   margin-top: 20px;
+}
+
+.box a {
+  color: var(--cat-font);
 }
 
 .foo {

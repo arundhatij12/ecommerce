@@ -101,7 +101,12 @@ a {
 .title {
   font-size: 3rem;
   display: flex;
+  margin-top: auto;
   color: rgb(69, 109, 145);
+}
+
+.title:hover {
+  color: var(--badge);
 }
 
 .navbar {

@@ -28,6 +28,14 @@ button:hover {
   background-color: rgba(62, 110, 151, 0.5);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--badge);
+}
+
 .head {
   display: flex;
   background-color: var(--background);
@@ -46,7 +54,7 @@ button:hover {
   border: var(--icon-background);
   border-radius: 50%;
   padding: 4px;
-  background-color: var(--icon-background);
+  background-color: antiquewhite;
 }
 
 #far1 {
@@ -55,7 +63,7 @@ button:hover {
   border: var(--badge-border);
   border-radius: 50%;
   padding: 4px;
-  background-color: var(--icon-background);
+  background-color: antiquewhite;
 }
 
 .badge1 {
@@ -101,6 +109,10 @@ button:hover {
   display: flex;
   margin-top: auto;
   color: rgb(34, 60, 83);
+}
+
+.title:hover {
+  color: var(--badge);
 }
 
 .navbar {
@@ -196,17 +208,13 @@ input {
   border-radius: 1rem;
 }
 
-a {
-  text-decoration: none;
-}
-
 .checkout {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid wheat;
+  border-top: 2px solid rgb(69, 109, 145);
   height: max-content;
   padding: 1rem;
 }
